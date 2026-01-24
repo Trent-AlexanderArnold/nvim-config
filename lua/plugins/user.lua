@@ -7,4 +7,11 @@ return {
       current_line_blame = true,
     },
   },
+  -- Fix conflict between nvim-highlight-colors and crates.nvim LSP
+  {
+    "brenoprata10/nvim-highlight-colors",
+    opts = {
+      exclude_filetypes = { "toml" },
+    },
+  },
 }
